@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity">
+
+    <!-- Result text view -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/Result_Text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end|right"
+            android:textSize="@dimen/text_Size"
+            android:gravity="end"
+            />
+    </LinearLayout>
+
+    <!-- Clear button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_view_height"
+        android:paddingTop="@dimen/Clear_Button_Padding"
+        android:paddingBottom="@dimen/Clear_Button_Padding"
+        android:paddingRight="8dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Clear"
+            android:id="@+id/buttonC"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size" />
+    </LinearLayout>
+
+    <!-- 7-9 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_view_height">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="7"
+            android:id="@+id/button7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="8"
+            android:id="@+id/button8"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="9"
+            android:id="@+id/button9"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="x"
+            android:id="@+id/buttonM"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+    </LinearLayout>
+
+    <!-- 4-6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_view_height">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="4"
+            android:id="@+id/button4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="5"
+            android:id="@+id/button5"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="6"
+            android:id="@+id/button6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="/"
+            android:id="@+id/buttonD"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+    </LinearLayout>
+
+    <!-- 1-3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_view_height">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="1"
+            android:id="@+id/button1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="2"
+            android:id="@+id/button2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="3"
+            android:id="@+id/button3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="+"
+            android:id="@+id/buttonA"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+    </LinearLayout>
+
+    <!-- 0- - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_view_height">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="."
+            android:id="@+id/buttondeci"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="0"
+            android:id="@+id/button0"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="="
+            android:id="@+id/buttonEqual"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/layout_view_height"
+            android:layout_height="fill_parent"
+            android:text="-"
+            android:id="@+id/buttonS"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_Size"/>
+    </LinearLayout>
+
+
+</LinearLayout>
