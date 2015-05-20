@@ -1,0 +1,4 @@
+UPDATES FOR ALL PROJECTS
+------------------------
+CALCULATOR
+0.0 Initial add to GITHUB + layout and some JAVA
