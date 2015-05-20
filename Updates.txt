@@ -1,4 +1,4 @@
 UPDATES FOR ALL PROJECTS
 ------------------------
 CALCULATOR
-0.0 Initial add to GITHUB + layout and some JAVA
+0.0 05/20/2015 4:20PM  Initial add to GITHUB + layout and some JAVA
