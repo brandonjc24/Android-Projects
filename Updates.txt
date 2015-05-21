@@ -2,3 +2,6 @@ UPDATES FOR ALL PROJECTS
 ------------------------
 CALCULATOR
 0.0 05/20/2015 4:20PM  Initial add to GITHUB + layout and some JAVA
+
+ROBOTICARM
+0.0 05/20/2015 8:38PM Initialize... it begins
