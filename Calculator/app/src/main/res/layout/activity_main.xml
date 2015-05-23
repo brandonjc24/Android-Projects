@@ -16,6 +16,7 @@
             android:layout_gravity="end|right"
             android:textSize="@dimen/text_Size"
             android:gravity="end"
+            android:text="0"
             />
     </LinearLayout>
 

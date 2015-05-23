@@ -4,6 +4,7 @@ CALCULATOR
 0.0 05/20/2015 04:20PM  Initial add to GITHUB + layout and some JAVA
 1.0 05/23/2015 11:41AM  Basic calculator working; Need to improve function ;
 1.1 05/23/2015 12:04PM	Calculator working; need to reduce the amount of code ;
+1.2 05/23/2015 02:07PM  Basic calculator complete; can add more features to make better
 
 ROBOTICARM
 0.0 05/20/2015 8:38PM Initialize... it begins
