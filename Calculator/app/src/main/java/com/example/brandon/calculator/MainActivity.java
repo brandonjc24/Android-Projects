@@ -16,7 +16,7 @@ import android.app.Activity;
 public class MainActivity extends ActionBarActivity {
 
 
-    private char operation ;
+    private char operation = 'E' ;
     private String firstNum = "";
     private String secondNum = "";
 
@@ -78,67 +78,87 @@ public class MainActivity extends ActionBarActivity {
         oneB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("1");
             }
         });
         twoB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("2");
             }
         });
         threeB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("3");
             }
         });
         fourB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("4");
             }
         });
         fiveB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("5");
             }
         });
         sixB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("6");
             }
         });
         sevenB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("7");
             }
         });
         eightB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("8");
             }
         });
         nineB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString().equals("0"))
+                    ResultTextView.setText("");
                 ResultTextView.append("9");
             }
         });
         zeroB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!ResultTextView.getText().toString().equals('0'))
+                if(!ResultTextView.getText().toString().equals("0"))
                     ResultTextView.append("0");
             }
         });
         decimalB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ResultTextView.getText().toString() == "")
+                    ResultTextView.setText("0");
                 if(!ResultTextView.getText().toString().contains("."))
                     ResultTextView.append(".");
             }
@@ -148,7 +168,8 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 setFirstNum("") ;
-                setSecondNum("");
+                setSecondNum("") ;
+                setOperation('E') ;
                 ResultTextView.setText("0") ;
             }
         });
@@ -178,6 +199,9 @@ public class MainActivity extends ActionBarActivity {
                         else
                             ResultTextView.setText("Invalid operation");
                     }
+                    setFirstNum("") ;
+                    setSecondNum("") ;
+                    setOperation('E') ;
                 }
             }
         });
