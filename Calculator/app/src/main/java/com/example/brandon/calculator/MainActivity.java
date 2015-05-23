@@ -17,8 +17,35 @@ public class MainActivity extends ActionBarActivity {
 
 
     private char operation ;
-    private String firstNum ;
-    private String secondNum;
+    private String firstNum = "";
+    private String secondNum = "";
+
+    public char getOperation() {
+        return operation;
+    }
+
+    public String getFirstNum() {
+        return firstNum;
+    }
+
+    public String getSecondNum() {
+        return secondNum;
+    }
+
+
+    public void setOperation(char operation) {
+        this.operation = operation;
+    }
+
+    public void setFirstNum(String firstNum) {
+        this.firstNum = firstNum;
+    }
+
+    public void setSecondNum(String secondNum) {
+        this.secondNum = secondNum;
+    }
+
+
 
 
     @Override
@@ -28,6 +55,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         final TextView ResultTextView = (TextView) findViewById(R.id.Result_Text_view) ;
+        ResultTextView.setText("0");
 
         Button equalB = (Button) findViewById(R.id.buttonEqual) ;
         Button oneB = (Button) findViewById(R.id.button1) ;
@@ -119,40 +147,80 @@ public class MainActivity extends ActionBarActivity {
         clearB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firstNum = "NULL" ;
-                secondNum = "NULL" ;
+                setFirstNum("") ;
+                setSecondNum("");
+                ResultTextView.setText("0") ;
             }
         });
 
         equalB.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(getFirstNum() == "")
+                    setFirstNum("0");
+                if (getSecondNum() == "" && getFirstNum() != ""){
+                    if (ResultTextView.getText().toString() == "")
+                        ResultTextView.setText("0");
+                    setSecondNum(ResultTextView.getText().toString());
 
+                    if (getOperation() == '+'){
+                        ResultTextView.setText( String.valueOf(Double.parseDouble(getFirstNum().toString()) + Double.parseDouble(getSecondNum().toString())) );
+                    }
+                    else if(getOperation() == '-'){
+                        ResultTextView.setText( String.valueOf(Double.parseDouble(getFirstNum().toString()) - Double.parseDouble(getSecondNum().toString())) );
+                    }
+                    else if(getOperation() == '*'){
+                        ResultTextView.setText( String.valueOf(Double.parseDouble(getFirstNum().toString()) * Double.parseDouble(getSecondNum().toString())) );
+                    }
+                    else if(getOperation() == '/'){
+                        if (Integer.parseInt(getSecondNum().toString()) != 0)
+                            ResultTextView.setText( String.valueOf(Double.parseDouble(getFirstNum().toString()) / Double.parseDouble(getSecondNum().toString())) );
+                        else
+                            ResultTextView.setText("Invalid operation");
+                    }
+                }
             }
         });
 
         addB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (getFirstNum() == ""){
+                    setFirstNum(ResultTextView.getText().toString()) ;
+                    ResultTextView.setText("0") ;
+                    setOperation('+');
+                }
 
             }
         });
         subtractB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (getFirstNum() == ""){ //
+                    setFirstNum(ResultTextView.getText().toString()) ;
+                    ResultTextView.setText("0") ;
+                    setOperation('-');
+                }
             }
         });
         multiplyB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (getFirstNum() == ""){ //
+                    setFirstNum(ResultTextView.getText().toString()) ;
+                    ResultTextView.setText("0") ;
+                    setOperation('*');
+                }
             }
         });
         divideB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (getFirstNum() == ""){ //
+                    setFirstNum(ResultTextView.getText().toString()) ;
+                    ResultTextView.setText("0") ;
+                    setOperation('/');
+                }
             }
         });
 
