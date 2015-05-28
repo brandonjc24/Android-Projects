@@ -8,3 +8,6 @@ CALCULATOR
 
 ROBOTICARM
 0.0 05/20/2015 8:38PM Initialize... it begins
+
+BLUETOOTHEXAMPLE
+0.0 05/28/2015 2:24PM  Making sure bluetooth is turned on
