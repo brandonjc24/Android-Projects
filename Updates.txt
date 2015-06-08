@@ -11,3 +11,6 @@ ROBOTICARM
 
 BLUETOOTHEXAMPLE
 0.0 05/28/2015 2:24PM  Making sure bluetooth is turned on
+
+SUNSHINE
+0.0 06/08/2015 4:34PM Weather app started from Udacity course
