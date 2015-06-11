@@ -3,4 +3,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_key" >location</string>
+    <string name="pref_location_default">Hamilton</string>
+    <string name="pref_units_label">Temperature Units</string>
+    <string name="pref_units_key">Units</string>
+    <string name="pref_units_metric">metric</string>
+    <string name="action_share">share</string>
 </resources>
